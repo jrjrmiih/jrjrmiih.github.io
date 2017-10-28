@@ -69,17 +69,17 @@
 
 
 
-<meta name="description" content="@ 自定义的快捷键 默认快捷键： gt: 跳转到下一个tab窗口 gT: 跳转到上一个tab窗口  自定义快捷键:  leader: &amp;lt;SPACE&amp;gt; &amp;lt;leader&amp;gt;ss: 开启关闭拼写检查  Denite:  &amp;lt;leader&amp;gt;uf: 检索当前目录 &amp;lt;leader&amp;gt;ur: 递归检索当前目录及子目录文件 &amp;lt;leader&amp;gt;um: 查看最近使用">
+<meta name="description" content="@ 自定义的快捷键 默认快捷键： gt: 跳转到下一个tab窗口 gT: 跳转到上一个tab窗口  自定义快捷键:  leader: &amp;lt;SPACE&amp;gt; &amp;lt;leader&amp;gt;ss: 开启关闭拼写检查   @ Vundle 插件使用 安装：  $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/V">
 <meta property="og:type" content="article">
 <meta property="og:title" content="VIM的配置与使用">
 <meta property="og:url" content="http://yoursite.com/2017/10/27/VIM 的配置与使用/index.html">
 <meta property="og:site_name" content="眷眷弥长的博客">
-<meta property="og:description" content="@ 自定义的快捷键 默认快捷键： gt: 跳转到下一个tab窗口 gT: 跳转到上一个tab窗口  自定义快捷键:  leader: &amp;lt;SPACE&amp;gt; &amp;lt;leader&amp;gt;ss: 开启关闭拼写检查  Denite:  &amp;lt;leader&amp;gt;uf: 检索当前目录 &amp;lt;leader&amp;gt;ur: 递归检索当前目录及子目录文件 &amp;lt;leader&amp;gt;um: 查看最近使用">
+<meta property="og:description" content="@ 自定义的快捷键 默认快捷键： gt: 跳转到下一个tab窗口 gT: 跳转到上一个tab窗口  自定义快捷键:  leader: &amp;lt;SPACE&amp;gt; &amp;lt;leader&amp;gt;ss: 开启关闭拼写检查   @ Vundle 插件使用 安装：  $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/V">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-28T15:26:48.916Z">
+<meta property="og:updated_time" content="2017-10-28T15:59:18.650Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VIM的配置与使用">
-<meta name="twitter:description" content="@ 自定义的快捷键 默认快捷键： gt: 跳转到下一个tab窗口 gT: 跳转到上一个tab窗口  自定义快捷键:  leader: &amp;lt;SPACE&amp;gt; &amp;lt;leader&amp;gt;ss: 开启关闭拼写检查  Denite:  &amp;lt;leader&amp;gt;uf: 检索当前目录 &amp;lt;leader&amp;gt;ur: 递归检索当前目录及子目录文件 &amp;lt;leader&amp;gt;um: 查看最近使用">
+<meta name="twitter:description" content="@ 自定义的快捷键 默认快捷键： gt: 跳转到下一个tab窗口 gT: 跳转到上一个tab窗口  自定义快捷键:  leader: &amp;lt;SPACE&amp;gt; &amp;lt;leader&amp;gt;ss: 开启关闭拼写检查   @ Vundle 插件使用 安装：  $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/V">
 
 
 
@@ -315,37 +315,6 @@ gT: 跳转到上一个tab窗口
 <pre><code>leader: &lt;SPACE&gt;
 &lt;leader&gt;ss: 开启关闭拼写检查
 </code></pre></li>
-<li><font color="Peru">Denite:</font>
-
-<pre><code>&lt;leader&gt;uf: 检索当前目录
-&lt;leader&gt;ur: 递归检索当前目录及子目录文件
-&lt;leader&gt;um: 查看最近使用文件
-&lt;leader&gt;ub: 查看已打开文件
-&lt;leader&gt;ul: 检索当前文件内容
-&lt;leader&gt;ug: 递归检索当前目录及子目录文件内容
-</code></pre></li>
-<li><font color="Peru">AutoFormat:</font>
-
-<pre><code>&lt;leader&gt;l: 格式化代码
-</code></pre></li>
-<li><font color="Peru">TagList:</font>
-
-<pre><code>&lt;leader&gt;t: 标记列表
-</code></pre></li>
-<li><font color="Peru">NerdCommenter:</font>
-
-<pre><code>&lt;leader&gt;/: 注释与反注释代码
-</code></pre></li>
-<li><font color="Peru">UltiSnips:</font>
-
-<pre><code>&lt;c-h&gt;: 扩展代码片段
-&lt;c-j&gt;: 跳到下个标记处
-&lt;c-k&gt;: 跳到上个标记处
-</code></pre></li>
-<li><font color="Peru">LiveDown:</font>
-
-<pre><code>&lt;leader&gt;gm: 打开默认浏览器，实时预览Markdown文件
-</code></pre></li>
 </ul>
 <h3 id="Vundle-插件使用"><a href="#Vundle-插件使用" class="headerlink" title="@ Vundle 插件使用"></a><font color="LightSlateBlue">@ Vundle 插件使用</font></h3><ul>
 <li><font color="Peru">安装：</font>
@@ -381,6 +350,15 @@ call denite#custom#var(&apos;file_rec&apos;, &apos;command&apos;, [&apos;rg&apos
 &quot; 使用连续子字符串，作为file_rec检索条件
 call denite#custom#source(&apos;file_rec&apos;, &apos;matchers&apos;, [&apos;matcher_substring&apos;])
 </code></pre></li>
+<li><font color="Peru">快捷键：</font>
+
+<pre><code>&lt;leader&gt;uf: 检索当前目录
+&lt;leader&gt;ur: 递归检索当前目录及子目录文件
+&lt;leader&gt;um: 查看最近使用文件
+&lt;leader&gt;ub: 查看已打开文件
+&lt;leader&gt;ul: 检索当前文件内容
+&lt;leader&gt;ug: 递归检索当前目录及子目录文件内容
+</code></pre></li>
 </ul>
 <h3 id="YouCompleteMe-插件使用"><a href="#YouCompleteMe-插件使用" class="headerlink" title="@ YouCompleteMe 插件使用"></a><font color="LightSlateBlue">@ YouCompleteMe 插件使用</font></h3><ul>
 <li><font color="Peru">安装：</font>
@@ -404,6 +382,16 @@ $ sudo pip install yapf  // python 格式化支持
 
 <pre><code>$ npm install -g remark-cli
 </code></pre></li>
+<li><font color="Peru">快捷键：</font>
+
+<pre><code>&lt;leader&gt;l: 格式化代码
+</code></pre></li>
+</ul>
+<h3 id="TagList-插件使用"><a href="#TagList-插件使用" class="headerlink" title="@ TagList 插件使用"></a><font color="LightSlateBlue">@ TagList 插件使用</font></h3><ul>
+<li><font color="Peru">快捷键：</font>
+
+<pre><code>&lt;leader&gt;t: 标记列表
+</code></pre></li>
 </ul>
 <h3 id="NerdCommenter-插件使用"><a href="#NerdCommenter-插件使用" class="headerlink" title="@ NerdCommenter 插件使用"></a><font color="LightSlateBlue">@ NerdCommenter 插件使用</font></h3><ul>
 <li><font color="Peru">安装：</font>
@@ -415,6 +403,10 @@ $ sudo pip install yapf  // python 格式化支持
 <pre><code>let g:NERDSpaceDelims = 1  // 在注释符与注释之间加入空格
 let g:NERDTrimTrailingWhitespace = 1  // 取消注释时，删除多余空格
 let g:NERDCommentEmptyLines = 1  // 允许注释空行，在注释大段代码时有意义
+</code></pre></li>
+<li><font color="Peru">快捷键：</font>
+
+<pre><code>&lt;leader&gt;/: 注释与反注释代码
 </code></pre></li>
 </ul>
 <h3 id="Ultisnips-插件使用"><a href="#Ultisnips-插件使用" class="headerlink" title="@ Ultisnips 插件使用"></a><font color="LightSlateBlue">@ Ultisnips 插件使用</font></h3><ul>
@@ -428,6 +420,12 @@ Plugin &apos;honza/vim-snippets&apos;  // 各语言补全模板插件
 <pre><code>###
 -
 </code></pre></li>
+<li><font color="Peru">快捷键：</font>
+
+<pre><code>&lt;c-h&gt;: 扩展代码片段
+&lt;c-j&gt;: 跳到下个标记处
+&lt;c-k&gt;: 跳到上个标记处
+</code></pre></li>
 </ul>
 <h3 id="LiveDown-插件使用"><a href="#LiveDown-插件使用" class="headerlink" title="@ LiveDown 插件使用"></a><font color="LightSlateBlue">@ LiveDown 插件使用</font></h3><ul>
 <li><font color="Peru">安装：</font>
@@ -435,7 +433,12 @@ Plugin &apos;honza/vim-snippets&apos;  // 各语言补全模板插件
 <pre><code>$ npm install -g livedown
 Plugin &apos;shime/vim-livedown&apos;
 </code></pre></li>
+<li><font color="Peru">快捷键：</font>
+
+<pre><code>&lt;leader&gt;gm: 打开默认浏览器，实时预览Markdown文件
+</code></pre></li>
 </ul>
+<p><em>备注：当发现LivedownToggle不生效时，先执行一次LivedownKill。</em></p>
 
       
     </div>
@@ -627,7 +630,7 @@ Plugin &apos;shime/vim-livedown&apos;
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义的快捷键"><span class="nav-number">1.</span> <span class="nav-text">@ 自定义的快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Vundle-插件使用"><span class="nav-number">2.</span> <span class="nav-text">@ Vundle 插件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Denite-插件使用"><span class="nav-number">3.</span> <span class="nav-text">@ Denite 插件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#YouCompleteMe-插件使用"><span class="nav-number">4.</span> <span class="nav-text">@ YouCompleteMe 插件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AutoFormat-插件使用"><span class="nav-number">5.</span> <span class="nav-text">@ AutoFormat 插件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NerdCommenter-插件使用"><span class="nav-number">6.</span> <span class="nav-text">@ NerdCommenter 插件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ultisnips-插件使用"><span class="nav-number">7.</span> <span class="nav-text">@ Ultisnips 插件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LiveDown-插件使用"><span class="nav-number">8.</span> <span class="nav-text">@ LiveDown 插件使用</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义的快捷键"><span class="nav-number">1.</span> <span class="nav-text">@ 自定义的快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Vundle-插件使用"><span class="nav-number">2.</span> <span class="nav-text">@ Vundle 插件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Denite-插件使用"><span class="nav-number">3.</span> <span class="nav-text">@ Denite 插件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#YouCompleteMe-插件使用"><span class="nav-number">4.</span> <span class="nav-text">@ YouCompleteMe 插件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AutoFormat-插件使用"><span class="nav-number">5.</span> <span class="nav-text">@ AutoFormat 插件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TagList-插件使用"><span class="nav-number">6.</span> <span class="nav-text">@ TagList 插件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NerdCommenter-插件使用"><span class="nav-number">7.</span> <span class="nav-text">@ NerdCommenter 插件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ultisnips-插件使用"><span class="nav-number">8.</span> <span class="nav-text">@ Ultisnips 插件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LiveDown-插件使用"><span class="nav-number">9.</span> <span class="nav-text">@ LiveDown 插件使用</span></a></li></ol></div>
             
 
           </div>

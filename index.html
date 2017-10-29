@@ -219,6 +219,136 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/29/Linux常用命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZhangLei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/jrjrmiih.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="眷眷弥长的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/29/Linux常用命令/" itemprop="url">Linux常用命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-29T19:02:37+08:00">
+                2017-10-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/10/29/Linux常用命令/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/10/29/Linux常用命令/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/28/Git常用命令/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -353,7 +483,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/27/VIM 的配置与使用/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/27/VIM的配置与使用/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZhangLei">
@@ -372,7 +502,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/10/27/VIM 的配置与使用/" itemprop="url">VIM的配置与使用</a></h1>
+                <a class="post-title-link" href="/2017/10/27/VIM的配置与使用/" itemprop="url">VIM的配置与使用</a></h1>
         
 
         <div class="post-meta">
@@ -403,9 +533,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/10/27/VIM 的配置与使用/#comments" itemprop="discussionUrl">
+                <a href="/2017/10/27/VIM的配置与使用/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/10/27/VIM 的配置与使用/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/10/27/VIM的配置与使用/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -435,10 +565,22 @@
       
         
           
-            <h3 id="自定义的快捷键"><a href="#自定义的快捷键" class="headerlink" title="@ 自定义的快捷键"></a><font color="LightSlateBlue">@ 自定义的快捷键</font></h3><ul>
+            <h3 id="常用命令"><a href="#常用命令" class="headerlink" title="@ 常用命令"></a><font color="LightSlateBlue">@ 常用命令</font></h3><ul>
+<li><font color="Peru">编辑：</font>
+
+<pre><code>&quot; 删除行尾空格
+:%s/\s\+$//
+
+&quot; 将tab替换成空格
+:%s/\t/    /g
+</code></pre></li>
+</ul>
+<h3 id="自定义的快捷键"><a href="#自定义的快捷键" class="headerlink" title="@ 自定义的快捷键"></a><font color="LightSlateBlue">@ 自定义的快捷键</font></h3><ul>
 <li><p><font color="Peru">默认快捷键</font>：</p>
 <pre><code>gt: 跳转到下一个tab窗口
 gT: 跳转到上一个tab窗口
+&lt;c-w&gt;z/&lt;c-w&gt;&lt;c-z&gt;/:pc: 关闭预览窗口
+&lt;c-g&gt;: 显示当前文件路径
 </code></pre></li>
 <li><font color="Peru">自定义快捷键:</font>
 
@@ -495,14 +637,14 @@ call denite#custom#source(&apos;file_rec&apos;, &apos;matchers&apos;, [&apos;mat
 
 <pre><code>Plugin &apos;Valloric/YouCompleteMe&apos;
 $ cd ~/.vim/bundle/YouCompleteMe
-$ ./install.py --clang-completer
+$ python3 ./install.py --clang-completer  // 使用python3解释器，可以补全python3
 </code></pre></li>
 <li><font color="Peru">配置：</font>
 
 <pre><code>let g:ycm_confirm_extra_conf = 0  // 当打开支持类型文件时，自动确认使用该插件
 </code></pre></li>
 </ul>
-<h3 id="AutoFormat-插件使用"><a href="#AutoFormat-插件使用" class="headerlink" title="@ AutoFormat 插件使用"></a><font color="LightSlateBlue">@ AutoFormat 插件使用</font></h3><ul>
+<h2 id="AutoFormat-插件使用"><a href="#AutoFormat-插件使用" class="headerlink" title="@ AutoFormat 插件使用"></a><font color="LightSlateBlue">@ AutoFormat 插件使用</font></h2><ul>
 <li><font color="Peru">安装：</font>
 
 <pre><code>Plugin &apos;Chiel92/vim-autoformat.git&apos;
@@ -617,7 +759,7 @@ Plugin &apos;shime/vim-livedown&apos;
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/19/Github+Hexo+Disqus 搭建静态博客/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/19/Github+Hexo+Disqus搭建静态博客/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZhangLei">
@@ -636,7 +778,7 @@ Plugin &apos;shime/vim-livedown&apos;
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/09/19/Github+Hexo+Disqus 搭建静态博客/" itemprop="url">Github+Hexo+Disqus 搭建静态博客</a></h1>
+                <a class="post-title-link" href="/2017/09/19/Github+Hexo+Disqus搭建静态博客/" itemprop="url">Github+Hexo+Disqus 搭建静态博客</a></h1>
         
 
         <div class="post-meta">
@@ -667,9 +809,9 @@ Plugin &apos;shime/vim-livedown&apos;
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/09/19/Github+Hexo+Disqus 搭建静态博客/#comments" itemprop="discussionUrl">
+                <a href="/2017/09/19/Github+Hexo+Disqus搭建静态博客/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/09/19/Github+Hexo+Disqus 搭建静态博客/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/09/19/Github+Hexo+Disqus搭建静态博客/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -818,7 +960,7 @@ $ npm install hexo-cli -g
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>

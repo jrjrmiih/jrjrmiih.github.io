@@ -69,17 +69,17 @@
 
 
 
-<meta name="description" content="@ 常用命令 编辑：  &amp;quot; 删除行尾空格 :%s/\s\+$//  &amp;quot; 将tab替换成空格 :%s/\t/    /g   @ 自定义的快捷键 默认快捷键： gt: 跳转到下一个tab窗口 gT: 跳转到上一个tab窗口 &amp;lt;c-w&amp;gt;z/&amp;lt;c-w&amp;gt;&amp;lt;c-z&amp;gt;/:pc: 关闭预览窗口 &amp;lt;c-g&amp;gt;: 显示当前文件路径  自定义快捷键:">
+<meta name="description" content="常用命令 编辑：  &amp;quot; 删除行尾空格 :%s/\s\+$//  &amp;quot; 将tab替换成空格 :%s/\t/    /g  查看：  &amp;quot; 查看被跟踪的文件 $ git ls-files  &amp;quot; 查看被忽略的文件 $ git ls-files -o  // -o, --others  &amp;quot; 查看文件为什么被忽略 $ git check-ignore -v &amp;l">
 <meta property="og:type" content="article">
 <meta property="og:title" content="VIM的配置与使用">
 <meta property="og:url" content="http://yoursite.com/2017/10/27/VIM的配置与使用/index.html">
 <meta property="og:site_name" content="眷眷弥长的博客">
-<meta property="og:description" content="@ 常用命令 编辑：  &amp;quot; 删除行尾空格 :%s/\s\+$//  &amp;quot; 将tab替换成空格 :%s/\t/    /g   @ 自定义的快捷键 默认快捷键： gt: 跳转到下一个tab窗口 gT: 跳转到上一个tab窗口 &amp;lt;c-w&amp;gt;z/&amp;lt;c-w&amp;gt;&amp;lt;c-z&amp;gt;/:pc: 关闭预览窗口 &amp;lt;c-g&amp;gt;: 显示当前文件路径  自定义快捷键:">
+<meta property="og:description" content="常用命令 编辑：  &amp;quot; 删除行尾空格 :%s/\s\+$//  &amp;quot; 将tab替换成空格 :%s/\t/    /g  查看：  &amp;quot; 查看被跟踪的文件 $ git ls-files  &amp;quot; 查看被忽略的文件 $ git ls-files -o  // -o, --others  &amp;quot; 查看文件为什么被忽略 $ git check-ignore -v &amp;l">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-29T10:57:37.598Z">
+<meta property="og:updated_time" content="2017-10-31T06:44:06.951Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VIM的配置与使用">
-<meta name="twitter:description" content="@ 常用命令 编辑：  &amp;quot; 删除行尾空格 :%s/\s\+$//  &amp;quot; 将tab替换成空格 :%s/\t/    /g   @ 自定义的快捷键 默认快捷键： gt: 跳转到下一个tab窗口 gT: 跳转到上一个tab窗口 &amp;lt;c-w&amp;gt;z/&amp;lt;c-w&amp;gt;&amp;lt;c-z&amp;gt;/:pc: 关闭预览窗口 &amp;lt;c-g&amp;gt;: 显示当前文件路径  自定义快捷键:">
+<meta name="twitter:description" content="常用命令 编辑：  &amp;quot; 删除行尾空格 :%s/\s\+$//  &amp;quot; 将tab替换成空格 :%s/\t/    /g  查看：  &amp;quot; 查看被跟踪的文件 $ git ls-files  &amp;quot; 查看被忽略的文件 $ git ls-files -o  // -o, --others  &amp;quot; 查看文件为什么被忽略 $ git check-ignore -v &amp;l">
 
 
 
@@ -180,6 +180,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
@@ -262,6 +272,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程基础/" itemprop="url" rel="index">
+                    <span itemprop="name">编程基础</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -305,7 +337,7 @@
       
 
       
-        <h3 id="常用命令"><a href="#常用命令" class="headerlink" title="@ 常用命令"></a><font color="LightSlateBlue">@ 常用命令</font></h3><ul>
+        <h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a><font color="LightSlateBlue">常用命令</font></h3><ul>
 <li><font color="Peru">编辑：</font>
 
 <pre><code>&quot; 删除行尾空格
@@ -314,8 +346,19 @@
 &quot; 将tab替换成空格
 :%s/\t/    /g
 </code></pre></li>
+<li><font color="Peru">查看：</font>
+
+<pre><code>&quot; 查看被跟踪的文件
+$ git ls-files
+
+&quot; 查看被忽略的文件
+$ git ls-files -o  // -o, --others
+
+&quot; 查看文件为什么被忽略
+$ git check-ignore -v &lt;file/folder name&gt;  // -v, --verbose
+</code></pre></li>
 </ul>
-<h3 id="自定义的快捷键"><a href="#自定义的快捷键" class="headerlink" title="@ 自定义的快捷键"></a><font color="LightSlateBlue">@ 自定义的快捷键</font></h3><ul>
+<h3 id="自定义的快捷键"><a href="#自定义的快捷键" class="headerlink" title="自定义的快捷键"></a><font color="LightSlateBlue">自定义的快捷键</font></h3><ul>
 <li><p><font color="Peru">默认快捷键</font>：</p>
 <pre><code>gt: 跳转到下一个tab窗口
 gT: 跳转到上一个tab窗口
@@ -328,7 +371,7 @@ gT: 跳转到上一个tab窗口
 &lt;leader&gt;ss: 开启关闭拼写检查
 </code></pre></li>
 </ul>
-<h3 id="Vundle-插件使用"><a href="#Vundle-插件使用" class="headerlink" title="@ Vundle 插件使用"></a><font color="LightSlateBlue">@ Vundle 插件使用</font></h3><ul>
+<h3 id="Vundle-插件使用"><a href="#Vundle-插件使用" class="headerlink" title="Vundle 插件使用"></a><font color="LightSlateBlue">Vundle 插件使用</font></h3><ul>
 <li><font color="Peru">安装：</font>
 
 <pre><code>$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -340,7 +383,7 @@ gT: 跳转到上一个tab窗口
 <pre><code>$ vim +PluginInstall +qall
 </code></pre></li>
 </ul>
-<h3 id="Denite-插件使用"><a href="#Denite-插件使用" class="headerlink" title="@ Denite 插件使用"></a><font color="LightSlateBlue">@ Denite 插件使用</font></h3><ul>
+<h3 id="Denite-插件使用"><a href="#Denite-插件使用" class="headerlink" title="Denite 插件使用"></a><font color="LightSlateBlue">Denite 插件使用</font></h3><ul>
 <li><font color="Peru">安装：</font>
 
 <pre><code>Plugin &apos;Shougo/denite.nvim&apos;
@@ -372,7 +415,7 @@ call denite#custom#source(&apos;file_rec&apos;, &apos;matchers&apos;, [&apos;mat
 &lt;leader&gt;ug: 递归检索当前目录及子目录文件内容
 </code></pre></li>
 </ul>
-<h3 id="YouCompleteMe-插件使用"><a href="#YouCompleteMe-插件使用" class="headerlink" title="@ YouCompleteMe 插件使用"></a><font color="LightSlateBlue">@ YouCompleteMe 插件使用</font></h3><ul>
+<h3 id="YouCompleteMe-插件使用"><a href="#YouCompleteMe-插件使用" class="headerlink" title="YouCompleteMe 插件使用"></a><font color="LightSlateBlue">YouCompleteMe 插件使用</font></h3><ul>
 <li><font color="Peru">安装：</font>
 
 <pre><code>Plugin &apos;Valloric/YouCompleteMe&apos;
@@ -384,7 +427,7 @@ $ python3 ./install.py --clang-completer  // 使用python3解释器，可以补�
 <pre><code>let g:ycm_confirm_extra_conf = 0  // 当打开支持类型文件时，自动确认使用该插件
 </code></pre></li>
 </ul>
-<h2 id="AutoFormat-插件使用"><a href="#AutoFormat-插件使用" class="headerlink" title="@ AutoFormat 插件使用"></a><font color="LightSlateBlue">@ AutoFormat 插件使用</font></h2><ul>
+<h3 id="AutoFormat-插件使用"><a href="#AutoFormat-插件使用" class="headerlink" title="AutoFormat 插件使用"></a><font color="LightSlateBlue">AutoFormat 插件使用</font></h3><ul>
 <li><font color="Peru">安装：</font>
 
 <pre><code>Plugin &apos;Chiel92/vim-autoformat.git&apos;
@@ -399,13 +442,13 @@ $ sudo pip install yapf  // python 格式化支持
 <pre><code>&lt;leader&gt;l: 格式化代码
 </code></pre></li>
 </ul>
-<h3 id="TagList-插件使用"><a href="#TagList-插件使用" class="headerlink" title="@ TagList 插件使用"></a><font color="LightSlateBlue">@ TagList 插件使用</font></h3><ul>
+<h3 id="TagList-插件使用"><a href="#TagList-插件使用" class="headerlink" title="TagList 插件使用"></a><font color="LightSlateBlue">TagList 插件使用</font></h3><ul>
 <li><font color="Peru">快捷键：</font>
 
 <pre><code>&lt;leader&gt;t: 标记列表
 </code></pre></li>
 </ul>
-<h3 id="NerdCommenter-插件使用"><a href="#NerdCommenter-插件使用" class="headerlink" title="@ NerdCommenter 插件使用"></a><font color="LightSlateBlue">@ NerdCommenter 插件使用</font></h3><ul>
+<h3 id="NerdCommenter-插件使用"><a href="#NerdCommenter-插件使用" class="headerlink" title="NerdCommenter 插件使用"></a><font color="LightSlateBlue">NerdCommenter 插件使用</font></h3><ul>
 <li><font color="Peru">安装：</font>
 
 <pre><code>Plugin &apos;scrooloose/nerdcommenter&apos;
@@ -421,7 +464,7 @@ let g:NERDCommentEmptyLines = 1  // 允许注释空行，在注释大段代码�
 <pre><code>&lt;leader&gt;/: 注释与反注释代码
 </code></pre></li>
 </ul>
-<h3 id="Ultisnips-插件使用"><a href="#Ultisnips-插件使用" class="headerlink" title="@ Ultisnips 插件使用"></a><font color="LightSlateBlue">@ Ultisnips 插件使用</font></h3><ul>
+<h3 id="Ultisnips-插件使用"><a href="#Ultisnips-插件使用" class="headerlink" title="Ultisnips 插件使用"></a><font color="LightSlateBlue">Ultisnips 插件使用</font></h3><ul>
 <li><font color="Peru">安装：</font>
 
 <pre><code>Plugin &apos;SirVer/ultisnips&apos;
@@ -439,7 +482,7 @@ Plugin &apos;honza/vim-snippets&apos;  // 各语言补全模板插件
 &lt;c-k&gt;: 跳到上个标记处
 </code></pre></li>
 </ul>
-<h3 id="LiveDown-插件使用"><a href="#LiveDown-插件使用" class="headerlink" title="@ LiveDown 插件使用"></a><font color="LightSlateBlue">@ LiveDown 插件使用</font></h3><ul>
+<h3 id="LiveDown-插件使用"><a href="#LiveDown-插件使用" class="headerlink" title="LiveDown 插件使用"></a><font color="LightSlateBlue">LiveDown 插件使用</font></h3><ul>
 <li><font color="Peru">安装：</font>
 
 <pre><code>$ npm install -g livedown
@@ -603,12 +646,21 @@ Plugin &apos;shime/vim-livedown&apos;
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
           
 
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
           
 
           
@@ -642,7 +694,7 @@ Plugin &apos;shime/vim-livedown&apos;
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#常用命令"><span class="nav-number">1.</span> <span class="nav-text">@ 常用命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义的快捷键"><span class="nav-number">2.</span> <span class="nav-text">@ 自定义的快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Vundle-插件使用"><span class="nav-number">3.</span> <span class="nav-text">@ Vundle 插件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Denite-插件使用"><span class="nav-number">4.</span> <span class="nav-text">@ Denite 插件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#YouCompleteMe-插件使用"><span class="nav-number">5.</span> <span class="nav-text">@ YouCompleteMe 插件使用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AutoFormat-插件使用"><span class="nav-number"></span> <span class="nav-text">@ AutoFormat 插件使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#TagList-插件使用"><span class="nav-number">1.</span> <span class="nav-text">@ TagList 插件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NerdCommenter-插件使用"><span class="nav-number">2.</span> <span class="nav-text">@ NerdCommenter 插件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ultisnips-插件使用"><span class="nav-number">3.</span> <span class="nav-text">@ Ultisnips 插件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LiveDown-插件使用"><span class="nav-number">4.</span> <span class="nav-text">@ LiveDown 插件使用</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#常用命令"><span class="nav-number">1.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义的快捷键"><span class="nav-number">2.</span> <span class="nav-text">自定义的快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Vundle-插件使用"><span class="nav-number">3.</span> <span class="nav-text">Vundle 插件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Denite-插件使用"><span class="nav-number">4.</span> <span class="nav-text">Denite 插件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#YouCompleteMe-插件使用"><span class="nav-number">5.</span> <span class="nav-text">YouCompleteMe 插件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AutoFormat-插件使用"><span class="nav-number">6.</span> <span class="nav-text">AutoFormat 插件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TagList-插件使用"><span class="nav-number">7.</span> <span class="nav-text">TagList 插件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NerdCommenter-插件使用"><span class="nav-number">8.</span> <span class="nav-text">NerdCommenter 插件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ultisnips-插件使用"><span class="nav-number">9.</span> <span class="nav-text">Ultisnips 插件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LiveDown-插件使用"><span class="nav-number">10.</span> <span class="nav-text">LiveDown 插件使用</span></a></li></ol></div>
             
 
           </div>

@@ -69,17 +69,17 @@
 
 
 
-<meta name="description" content="@ Python “pip install mqsql-python” 提示 “library not found for -lssl”.  $ xcode-select --install $ export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/   @ Chrome 如何屏蔽百度广告：  // 安装Adblock Plus插">
+<meta name="description" content="Docker 命令行： // 查询镜像仓库 $ sudo docker search &amp;lt;name&amp;gt; // 查看本机存在的所有容器 $ sudo docker ps -a // 删除处于终止状态的容器 $ sudo docker rm &amp;lt;pid&amp;gt;   Python “pip install mqsql-python” 提示 “library not found for -ls">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Developer开发环境问题及解决办法">
 <meta property="og:url" content="http://yoursite.com/2017/11/01/Developer开发环境问题及解决办法/index.html">
 <meta property="og:site_name" content="眷眷弥长的博客">
-<meta property="og:description" content="@ Python “pip install mqsql-python” 提示 “library not found for -lssl”.  $ xcode-select --install $ export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/   @ Chrome 如何屏蔽百度广告：  // 安装Adblock Plus插">
+<meta property="og:description" content="Docker 命令行： // 查询镜像仓库 $ sudo docker search &amp;lt;name&amp;gt; // 查看本机存在的所有容器 $ sudo docker ps -a // 删除处于终止状态的容器 $ sudo docker rm &amp;lt;pid&amp;gt;   Python “pip install mqsql-python” 提示 “library not found for -ls">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-02T09:49:49.505Z">
+<meta property="og:updated_time" content="2017-11-22T03:27:26.547Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Developer开发环境问题及解决办法">
-<meta name="twitter:description" content="@ Python “pip install mqsql-python” 提示 “library not found for -lssl”.  $ xcode-select --install $ export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/   @ Chrome 如何屏蔽百度广告：  // 安装Adblock Plus插">
+<meta name="twitter:description" content="Docker 命令行： // 查询镜像仓库 $ sudo docker search &amp;lt;name&amp;gt; // 查看本机存在的所有容器 $ sudo docker ps -a // 删除处于终止状态的容器 $ sudo docker rm &amp;lt;pid&amp;gt;   Python “pip install mqsql-python” 提示 “library not found for -ls">
 
 
 
@@ -315,18 +315,38 @@
       
 
       
-        <h3 id="Python"><a href="#Python" class="headerlink" title="@ Python"></a><font color="LightSlateBlue">@ Python</font></h3><ul>
-<li><font color="Peru">“pip install mqsql-python” 提示 “library not found for -lssl”.</font>
-
+        <h3 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h3><ul>
+<li><p>命令行：</p>
+<pre><code>// 查询镜像仓库
+$ sudo docker search &lt;name&gt;
+// 查看本机存在的所有容器
+$ sudo docker ps -a
+// 删除处于终止状态的容器
+$ sudo docker rm &lt;pid&gt;
+</code></pre></li>
+</ul>
+<h3 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h3><ul>
+<li><p>“pip install mqsql-python” 提示 “library not found for -lssl”.</p>
 <pre><code>$ xcode-select --install
 $ export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
 </code></pre></li>
 </ul>
-<h3 id="Chrome"><a href="#Chrome" class="headerlink" title="@ Chrome"></a><font color="LightSlateBlue">@ Chrome</font></h3><ul>
-<li><font color="Peru">如何屏蔽百度广告：</font>
-
+<h3 id="Chrome"><a href="#Chrome" class="headerlink" title="Chrome"></a>Chrome</h3><ul>
+<li><p>如何屏蔽百度广告：</p>
 <pre><code>// 安装Adblock Plus插件，在设置 -&gt; Add your own filters 中添加过滤条件：
 pos.baidu.com*
+</code></pre></li>
+</ul>
+<h3 id="Jenkins环境搭建"><a href="#Jenkins环境搭建" class="headerlink" title="Jenkins环境搭建"></a>Jenkins环境搭建</h3><ul>
+<li><p>Docker版本：</p>
+<pre><code>// 启动docker 服务
+$ systemctl start docker
+// 下载镜像
+$ sudo docker pull jenkins/jenkins
+// 运行
+$ sudo docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins
+// 初次运行，复制下面命令显示的密码
+$ sudo docker exec &lt;pid&gt; cat /var/jenkins_home/secrets/initialAdminPassword
 </code></pre></li>
 </ul>
 
@@ -529,7 +549,7 @@ pos.baidu.com*
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Python"><span class="nav-number">1.</span> <span class="nav-text">@ Python</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Chrome"><span class="nav-number">2.</span> <span class="nav-text">@ Chrome</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Docker"><span class="nav-number">1.</span> <span class="nav-text">Docker</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Python"><span class="nav-number">2.</span> <span class="nav-text">Python</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Chrome"><span class="nav-number">3.</span> <span class="nav-text">Chrome</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Jenkins环境搭建"><span class="nav-number">4.</span> <span class="nav-text">Jenkins环境搭建</span></a></li></ol></div>
             
 
           </div>

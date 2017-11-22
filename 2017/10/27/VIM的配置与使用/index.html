@@ -69,17 +69,17 @@
 
 
 
-<meta name="description" content="常用命令 编辑：  &amp;quot; 删除行尾空格 :%s/\s\+$//  &amp;quot; 将tab替换成空格 :%s/\t/    /g  查看：  &amp;quot; 查看被跟踪的文件 $ git ls-files  &amp;quot; 查看被忽略的文件 $ git ls-files -o  // -o, --others  &amp;quot; 查看文件为什么被忽略 $ git check-ignore -v &amp;l">
+<meta name="description" content="常用命令 编辑： &amp;quot; 删除行尾空格 :%s/\s\+$//  &amp;quot; 将tab替换成空格 :%s/\t/    /g  查看： &amp;quot; 查看被跟踪的文件 $ git ls-files  &amp;quot; 查看被忽略的文件 $ git ls-files -o  // -o, --others  &amp;quot; 查看文件为什么被忽略 $ git check-ignore -v &amp;lt;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="VIM的配置与使用">
 <meta property="og:url" content="http://yoursite.com/2017/10/27/VIM的配置与使用/index.html">
 <meta property="og:site_name" content="眷眷弥长的博客">
-<meta property="og:description" content="常用命令 编辑：  &amp;quot; 删除行尾空格 :%s/\s\+$//  &amp;quot; 将tab替换成空格 :%s/\t/    /g  查看：  &amp;quot; 查看被跟踪的文件 $ git ls-files  &amp;quot; 查看被忽略的文件 $ git ls-files -o  // -o, --others  &amp;quot; 查看文件为什么被忽略 $ git check-ignore -v &amp;l">
+<meta property="og:description" content="常用命令 编辑： &amp;quot; 删除行尾空格 :%s/\s\+$//  &amp;quot; 将tab替换成空格 :%s/\t/    /g  查看： &amp;quot; 查看被跟踪的文件 $ git ls-files  &amp;quot; 查看被忽略的文件 $ git ls-files -o  // -o, --others  &amp;quot; 查看文件为什么被忽略 $ git check-ignore -v &amp;lt;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-31T06:44:06.951Z">
+<meta property="og:updated_time" content="2017-11-22T03:30:24.399Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VIM的配置与使用">
-<meta name="twitter:description" content="常用命令 编辑：  &amp;quot; 删除行尾空格 :%s/\s\+$//  &amp;quot; 将tab替换成空格 :%s/\t/    /g  查看：  &amp;quot; 查看被跟踪的文件 $ git ls-files  &amp;quot; 查看被忽略的文件 $ git ls-files -o  // -o, --others  &amp;quot; 查看文件为什么被忽略 $ git check-ignore -v &amp;l">
+<meta name="twitter:description" content="常用命令 编辑： &amp;quot; 删除行尾空格 :%s/\s\+$//  &amp;quot; 将tab替换成空格 :%s/\t/    /g  查看： &amp;quot; 查看被跟踪的文件 $ git ls-files  &amp;quot; 查看被忽略的文件 $ git ls-files -o  // -o, --others  &amp;quot; 查看文件为什么被忽略 $ git check-ignore -v &amp;lt;">
 
 
 
@@ -337,17 +337,15 @@
       
 
       
-        <h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a><font color="LightSlateBlue">常用命令</font></h3><ul>
-<li><font color="Peru">编辑：</font>
-
+        <h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><ul>
+<li><p>编辑：</p>
 <pre><code>&quot; 删除行尾空格
 :%s/\s\+$//
 
 &quot; 将tab替换成空格
 :%s/\t/    /g
 </code></pre></li>
-<li><font color="Peru">查看：</font>
-
+<li><p>查看：</p>
 <pre><code>&quot; 查看被跟踪的文件
 $ git ls-files
 
@@ -358,39 +356,34 @@ $ git ls-files -o  // -o, --others
 $ git check-ignore -v &lt;file/folder name&gt;  // -v, --verbose
 </code></pre></li>
 </ul>
-<h3 id="自定义的快捷键"><a href="#自定义的快捷键" class="headerlink" title="自定义的快捷键"></a><font color="LightSlateBlue">自定义的快捷键</font></h3><ul>
-<li><p><font color="Peru">默认快捷键</font>：</p>
+<h3 id="自定义的快捷键"><a href="#自定义的快捷键" class="headerlink" title="自定义的快捷键"></a>自定义的快捷键</h3><ul>
+<li><p>默认快捷键：</p>
 <pre><code>gt: 跳转到下一个tab窗口
 gT: 跳转到上一个tab窗口
 &lt;c-w&gt;z/&lt;c-w&gt;&lt;c-z&gt;/:pc: 关闭预览窗口
 &lt;c-g&gt;: 显示当前文件路径
 </code></pre></li>
-<li><font color="Peru">自定义快捷键:</font>
-
+<li><p>自定义快捷键:</p>
 <pre><code>leader: &lt;SPACE&gt;
 &lt;leader&gt;ss: 开启关闭拼写检查
 </code></pre></li>
 </ul>
-<h3 id="Vundle-插件使用"><a href="#Vundle-插件使用" class="headerlink" title="Vundle 插件使用"></a><font color="LightSlateBlue">Vundle 插件使用</font></h3><ul>
-<li><font color="Peru">安装：</font>
-
+<h3 id="Vundle-插件使用"><a href="#Vundle-插件使用" class="headerlink" title="Vundle 插件使用"></a>Vundle 插件使用</h3><ul>
+<li><p>安装：</p>
 <pre><code>$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 </code></pre></li>
-<li><font color="Peru">安装配置好的插件：</font>
-
+<li><p>安装配置好的插件：</p>
 <pre><code>:PluginInstall
 </code></pre><p>或者</p>
 <pre><code>$ vim +PluginInstall +qall
 </code></pre></li>
 </ul>
-<h3 id="Denite-插件使用"><a href="#Denite-插件使用" class="headerlink" title="Denite 插件使用"></a><font color="LightSlateBlue">Denite 插件使用</font></h3><ul>
-<li><font color="Peru">安装：</font>
-
+<h3 id="Denite-插件使用"><a href="#Denite-插件使用" class="headerlink" title="Denite 插件使用"></a>Denite 插件使用</h3><ul>
+<li><p>安装：</p>
 <pre><code>Plugin &apos;Shougo/denite.nvim&apos;
 Plugin &apos;Shougo/neomru.vim&apos;  // 检索最近打开文件的插件
 </code></pre></li>
-<li><font color="Peru">配置：</font>
-
+<li><p>配置：</p>
 <pre><code>&quot; 使用rg作为grep内容检索命令
 call denite#custom#var(&apos;grep&apos;, &apos;command&apos;, [&apos;rg&apos;])
 call denite#custom#var(&apos;grep&apos;, &apos;default_opts&apos;, [&apos;--vimgrep&apos;, &apos;--no-heading&apos;])
@@ -405,8 +398,7 @@ call denite#custom#var(&apos;file_rec&apos;, &apos;command&apos;, [&apos;rg&apos
 &quot; 使用连续子字符串，作为file_rec检索条件
 call denite#custom#source(&apos;file_rec&apos;, &apos;matchers&apos;, [&apos;matcher_substring&apos;])
 </code></pre></li>
-<li><font color="Peru">快捷键：</font>
-
+<li><p>快捷键：</p>
 <pre><code>&lt;leader&gt;uf: 检索当前目录
 &lt;leader&gt;ur: 递归检索当前目录及子目录文件
 &lt;leader&gt;um: 查看最近使用文件
@@ -415,81 +407,67 @@ call denite#custom#source(&apos;file_rec&apos;, &apos;matchers&apos;, [&apos;mat
 &lt;leader&gt;ug: 递归检索当前目录及子目录文件内容
 </code></pre></li>
 </ul>
-<h3 id="YouCompleteMe-插件使用"><a href="#YouCompleteMe-插件使用" class="headerlink" title="YouCompleteMe 插件使用"></a><font color="LightSlateBlue">YouCompleteMe 插件使用</font></h3><ul>
-<li><font color="Peru">安装：</font>
-
+<h3 id="YouCompleteMe-插件使用"><a href="#YouCompleteMe-插件使用" class="headerlink" title="YouCompleteMe 插件使用"></a>YouCompleteMe 插件使用</h3><ul>
+<li><p>安装：</p>
 <pre><code>Plugin &apos;Valloric/YouCompleteMe&apos;
 $ cd ~/.vim/bundle/YouCompleteMe
 $ python3 ./install.py --clang-completer  // 使用python3解释器，可以补全python3
 </code></pre></li>
-<li><font color="Peru">配置：</font>
-
+<li><p>配置：</p>
 <pre><code>let g:ycm_confirm_extra_conf = 0  // 当打开支持类型文件时，自动确认使用该插件
 </code></pre></li>
 </ul>
-<h3 id="AutoFormat-插件使用"><a href="#AutoFormat-插件使用" class="headerlink" title="AutoFormat 插件使用"></a><font color="LightSlateBlue">AutoFormat 插件使用</font></h3><ul>
-<li><font color="Peru">安装：</font>
-
+<h3 id="AutoFormat-插件使用"><a href="#AutoFormat-插件使用" class="headerlink" title="AutoFormat 插件使用"></a>AutoFormat 插件使用</h3><ul>
+<li><p>安装：</p>
 <pre><code>Plugin &apos;Chiel92/vim-autoformat.git&apos;
 $ sudo pip install yapf  // python 格式化支持
 </code></pre></li>
-<li><font color="Peru">Markdown 格式化支持：</font>
-
+<li><p>Markdown 格式化支持：</p>
 <pre><code>$ npm install -g remark-cli
 </code></pre></li>
-<li><font color="Peru">快捷键：</font>
-
+<li><p>快捷键：</p>
 <pre><code>&lt;leader&gt;l: 格式化代码
 </code></pre></li>
 </ul>
-<h3 id="TagList-插件使用"><a href="#TagList-插件使用" class="headerlink" title="TagList 插件使用"></a><font color="LightSlateBlue">TagList 插件使用</font></h3><ul>
-<li><font color="Peru">快捷键：</font>
-
+<h3 id="TagList-插件使用"><a href="#TagList-插件使用" class="headerlink" title="TagList 插件使用"></a>TagList 插件使用</h3><ul>
+<li><p>快捷键：</p>
 <pre><code>&lt;leader&gt;t: 标记列表
 </code></pre></li>
 </ul>
-<h3 id="NerdCommenter-插件使用"><a href="#NerdCommenter-插件使用" class="headerlink" title="NerdCommenter 插件使用"></a><font color="LightSlateBlue">NerdCommenter 插件使用</font></h3><ul>
-<li><font color="Peru">安装：</font>
-
+<h3 id="NerdCommenter-插件使用"><a href="#NerdCommenter-插件使用" class="headerlink" title="NerdCommenter 插件使用"></a>NerdCommenter 插件使用</h3><ul>
+<li><p>安装：</p>
 <pre><code>Plugin &apos;scrooloose/nerdcommenter&apos;
 </code></pre></li>
-<li><font color="Peru">配置：</font>
-
+<li><p>配置：</p>
 <pre><code>let g:NERDSpaceDelims = 1  // 在注释符与注释之间加入空格
 let g:NERDTrimTrailingWhitespace = 1  // 取消注释时，删除多余空格
 let g:NERDCommentEmptyLines = 1  // 允许注释空行，在注释大段代码时有意义
 </code></pre></li>
-<li><font color="Peru">快捷键：</font>
-
+<li><p>快捷键：</p>
 <pre><code>&lt;leader&gt;/: 注释与反注释代码
 </code></pre></li>
 </ul>
-<h3 id="Ultisnips-插件使用"><a href="#Ultisnips-插件使用" class="headerlink" title="Ultisnips 插件使用"></a><font color="LightSlateBlue">Ultisnips 插件使用</font></h3><ul>
-<li><font color="Peru">安装：</font>
-
+<h3 id="Ultisnips-插件使用"><a href="#Ultisnips-插件使用" class="headerlink" title="Ultisnips 插件使用"></a>Ultisnips 插件使用</h3><ul>
+<li><p>安装：</p>
 <pre><code>Plugin &apos;SirVer/ultisnips&apos;
 Plugin &apos;honza/vim-snippets&apos;  // 各语言补全模板插件
 </code></pre></li>
-<li><font color="Peru">Markdown 自定义：</font>
-
+<li><p>Markdown 自定义：</p>
 <pre><code>###
 -
 </code></pre></li>
-<li><font color="Peru">快捷键：</font>
-
+<li><p>快捷键：</p>
 <pre><code>&lt;c-h&gt;: 扩展代码片段
 &lt;c-j&gt;: 跳到下个标记处
 &lt;c-k&gt;: 跳到上个标记处
 </code></pre></li>
 </ul>
-<h3 id="LiveDown-插件使用"><a href="#LiveDown-插件使用" class="headerlink" title="LiveDown 插件使用"></a><font color="LightSlateBlue">LiveDown 插件使用</font></h3><ul>
-<li><font color="Peru">安装：</font>
-
+<h3 id="LiveDown-插件使用"><a href="#LiveDown-插件使用" class="headerlink" title="LiveDown 插件使用"></a>LiveDown 插件使用</h3><ul>
+<li><p>安装：</p>
 <pre><code>$ npm install -g livedown
 Plugin &apos;shime/vim-livedown&apos;
 </code></pre></li>
-<li><font color="Peru">快捷键：</font>
-
+<li><p>快捷键：</p>
 <pre><code>&lt;leader&gt;gm: 打开默认浏览器，实时预览Markdown文件
 </code></pre></li>
 </ul>

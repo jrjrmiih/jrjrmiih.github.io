@@ -69,17 +69,17 @@
 
 
 
-<meta name="description" content="@ tag命令 删除远程分支：  // 以下二选一即可 $ git push origin :&amp;lt;branch_name&amp;gt; $ git push --delete origin &amp;lt;branch_name&amp;gt;  删除被忽略的文件及目录：  $ git clean -xdf  // -x(不使用ignore规则，即删除时包含被忽略的文件)">
+<meta name="description" content="tag 删除远程分支： // 以下二选一即可 $ git push origin :&amp;lt;branch_name&amp;gt; $ git push --delete origin &amp;lt;branch_name&amp;gt;  删除被忽略的文件及目录： $ git clean -xdf  // -x(不使用ignore规则，即删除时包含被忽略的文件)   branch 查看节点所属分支： // 查看节点所">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git常用命令">
 <meta property="og:url" content="http://yoursite.com/2017/10/28/Git常用命令/index.html">
 <meta property="og:site_name" content="眷眷弥长的博客">
-<meta property="og:description" content="@ tag命令 删除远程分支：  // 以下二选一即可 $ git push origin :&amp;lt;branch_name&amp;gt; $ git push --delete origin &amp;lt;branch_name&amp;gt;  删除被忽略的文件及目录：  $ git clean -xdf  // -x(不使用ignore规则，即删除时包含被忽略的文件)">
+<meta property="og:description" content="tag 删除远程分支： // 以下二选一即可 $ git push origin :&amp;lt;branch_name&amp;gt; $ git push --delete origin &amp;lt;branch_name&amp;gt;  删除被忽略的文件及目录： $ git clean -xdf  // -x(不使用ignore规则，即删除时包含被忽略的文件)   branch 查看节点所属分支： // 查看节点所">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-31T11:06:20.985Z">
+<meta property="og:updated_time" content="2017-11-22T03:29:10.245Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git常用命令">
-<meta name="twitter:description" content="@ tag命令 删除远程分支：  // 以下二选一即可 $ git push origin :&amp;lt;branch_name&amp;gt; $ git push --delete origin &amp;lt;branch_name&amp;gt;  删除被忽略的文件及目录：  $ git clean -xdf  // -x(不使用ignore规则，即删除时包含被忽略的文件)">
+<meta name="twitter:description" content="tag 删除远程分支： // 以下二选一即可 $ git push origin :&amp;lt;branch_name&amp;gt; $ git push --delete origin &amp;lt;branch_name&amp;gt;  删除被忽略的文件及目录： $ git clean -xdf  // -x(不使用ignore规则，即删除时包含被忽略的文件)   branch 查看节点所属分支： // 查看节点所">
 
 
 
@@ -337,16 +337,20 @@
       
 
       
-        <h3 id="tag命令"><a href="#tag命令" class="headerlink" title="@ tag命令"></a><font color="LightSlateBlue">@ tag命令</font></h3><ul>
-<li><font color="Peru">删除远程分支：</font>
-
+        <h3 id="tag"><a href="#tag" class="headerlink" title="tag"></a>tag</h3><ul>
+<li><p>删除远程分支：</p>
 <pre><code>// 以下二选一即可
 $ git push origin :&lt;branch_name&gt;
 $ git push --delete origin &lt;branch_name&gt;
 </code></pre></li>
-<li><font color="Peru">删除被忽略的文件及目录：</font>
-
+<li><p>删除被忽略的文件及目录：</p>
 <pre><code>$ git clean -xdf  // -x(不使用ignore规则，即删除时包含被忽略的文件)
+</code></pre></li>
+</ul>
+<h3 id="branch"><a href="#branch" class="headerlink" title="branch"></a>branch</h3><ul>
+<li><p>查看节点所属分支：</p>
+<pre><code>// 查看节点所属的本地分支，注：如果所属分支没有pull或者checkout过，则无法显示。
+git branch --contains &lt;commit_id&gt;  // -r 所属远程分支，-a 所属本地和远程分支
 </code></pre></li>
 </ul>
 
@@ -549,7 +553,7 @@ $ git push --delete origin &lt;branch_name&gt;
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#tag命令"><span class="nav-number">1.</span> <span class="nav-text">@ tag命令</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#tag"><span class="nav-number">1.</span> <span class="nav-text">tag</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#branch"><span class="nav-number">2.</span> <span class="nav-text">branch</span></a></li></ol></div>
             
 
           </div>

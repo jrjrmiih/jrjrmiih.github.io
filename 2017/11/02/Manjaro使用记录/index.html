@@ -69,17 +69,17 @@
 
 
 
-<meta name="description" content="@ Parallels Desktop 共享文件夹路径：  /mnt/psf/&amp;lt;Home&amp;gt;   @ Pacman相关 使用中国安装源：  $ sudo pacman-mirrors -gb testing -c China $ sudo pacman -Syyu  用法说明：  http://blog.csdn.net/taiyang1987912/article/details/41">
+<meta name="description" content="@ Parallels Desktop 共享文件夹路径： /mnt/psf/&amp;lt;Home&amp;gt;   @ Pacman相关 使用中国安装源： $ sudo pacman-mirrors -gb testing -c China $ sudo pacman -Syyu  用法说明： http://blog.csdn.net/taiyang1987912/article/details/41253">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Manjaro使用记录">
 <meta property="og:url" content="http://yoursite.com/2017/11/02/Manjaro使用记录/index.html">
 <meta property="og:site_name" content="眷眷弥长的博客">
-<meta property="og:description" content="@ Parallels Desktop 共享文件夹路径：  /mnt/psf/&amp;lt;Home&amp;gt;   @ Pacman相关 使用中国安装源：  $ sudo pacman-mirrors -gb testing -c China $ sudo pacman -Syyu  用法说明：  http://blog.csdn.net/taiyang1987912/article/details/41">
+<meta property="og:description" content="@ Parallels Desktop 共享文件夹路径： /mnt/psf/&amp;lt;Home&amp;gt;   @ Pacman相关 使用中国安装源： $ sudo pacman-mirrors -gb testing -c China $ sudo pacman -Syyu  用法说明： http://blog.csdn.net/taiyang1987912/article/details/41253">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-02T10:23:16.000Z">
+<meta property="og:updated_time" content="2017-11-22T03:29:53.536Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Manjaro使用记录">
-<meta name="twitter:description" content="@ Parallels Desktop 共享文件夹路径：  /mnt/psf/&amp;lt;Home&amp;gt;   @ Pacman相关 使用中国安装源：  $ sudo pacman-mirrors -gb testing -c China $ sudo pacman -Syyu  用法说明：  http://blog.csdn.net/taiyang1987912/article/details/41">
+<meta name="twitter:description" content="@ Parallels Desktop 共享文件夹路径： /mnt/psf/&amp;lt;Home&amp;gt;   @ Pacman相关 使用中国安装源： $ sudo pacman-mirrors -gb testing -c China $ sudo pacman -Syyu  用法说明： http://blog.csdn.net/taiyang1987912/article/details/41253">
 
 
 
@@ -315,36 +315,38 @@
       
 
       
-        <h3 id="Parallels-Desktop"><a href="#Parallels-Desktop" class="headerlink" title="@ Parallels Desktop"></a><font color="LightSlateBlue">@ Parallels Desktop</font></h3><ul>
-<li><font color="Peru">共享文件夹路径：</font>
-
+        <h3 id="Parallels-Desktop"><a href="#Parallels-Desktop" class="headerlink" title="@ Parallels Desktop"></a>@ Parallels Desktop</h3><ul>
+<li><p>共享文件夹路径：</p>
 <pre><code>/mnt/psf/&lt;Home&gt;
 </code></pre></li>
 </ul>
-<h3 id="Pacman相关"><a href="#Pacman相关" class="headerlink" title="@ Pacman相关"></a><font color="LightSlateBlue">@ Pacman相关</font></h3><ul>
-<li><font color="Peru">使用中国安装源：</font>
-
+<h3 id="Pacman相关"><a href="#Pacman相关" class="headerlink" title="@ Pacman相关"></a>@ Pacman相关</h3><ul>
+<li><p>使用中国安装源：</p>
 <pre><code>$ sudo pacman-mirrors -gb testing -c China
 $ sudo pacman -Syyu
 </code></pre></li>
-<li><font color="Peru">用法说明：</font>
-
+<li><p>用法说明：</p>
 <p><a href="http://blog.csdn.net/taiyang1987912/article/details/41253533" target="_blank" rel="external">http://blog.csdn.net/taiyang1987912/article/details/41253533</a></p>
 </li>
 </ul>
-<h3 id="tmux相关"><a href="#tmux相关" class="headerlink" title="@ tmux相关"></a><font color="LightSlateBlue">@ tmux相关</font></h3><ul>
-<li><font color="Peru">默认开启tmux：</font>
-
+<h3 id="tmux相关"><a href="#tmux相关" class="headerlink" title="@ tmux相关"></a>@ tmux相关</h3><ul>
+<li><p>默认开启tmux：</p>
 <pre><code>打开终端Preference -&gt; &quot;Run a custom command instead of my shell&quot; -&gt; 填写tmux
 </code></pre></li>
-<li><font color="Peru">tmux快捷键：</font>
-
+<li><p>tmux快捷键：</p>
 <p><a href="http://blog.csdn.net/hcx25909/article/details/7602935" target="_blank" rel="external">http://blog.csdn.net/hcx25909/article/details/7602935</a></p>
 </li>
-<li><font color="Peru">设置鼠标滚动：</font>
-
-<p><c-b>+:, set -g mouse on</c-b></p>
-</li>
+<li><p>设置鼠标滚动：</p>
+<pre><code>&lt;c-b&gt;+:, set -g mouse on
+</code></pre></li>
+<li><p>复制到剪贴板：</p>
+<pre><code>$ sudo pacman -S xclip  // 安装xclip
+$ vim ~/.tmux.conf
+// 输入下面的内容
+set -g mouse on
+set-window-option -g mode-keys vi
+bind -T copy-mode-vi y send-keys -X copy-pipe &apos;xclip -in -selection clipboard&apos;
+</code></pre></li>
 </ul>
 
       
